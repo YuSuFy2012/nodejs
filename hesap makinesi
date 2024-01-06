@@ -1,0 +1,29 @@
+# İlk sayıyı al
+sayi1 = float(input("İlk sayiyi girin: "))
+
+# İkinci sayıyı al
+sayi2 = float(input("İkinci sayiyi girin: "))
+
+# İşlemi seç
+islem = input("Yapmak istediğiniz işlemi seçin (+, -, *, /): ")
+
+Hesaplama
+if islem == "+":
+    sonuc = sayi1 + sayi2
+elif islem == "-":
+    sonuc = sayi1 - sayi2
+elif islem == "*":
+    sonuc = sayi1 * sayi2
+elif islem == "/":
+    # 0'a bölme durumunu kontrol et
+    if sayi2 != 0:
+        sonuc = sayi1 / sayi2
+    else:
+        sonuc = "Hata! Sayı sıfıra bölünemez."
+else:
+    sonuc = "Geçersiz işlem!"
+
+# Sonucu yazdır
+print("Sonuç:",sonuc)
+
+
